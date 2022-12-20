@@ -1,0 +1,100 @@
+.benefits {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 50%;
+        justify-content: space-between;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-basis: 25%;
+        justify-content: space-between;
+    }
+
+    &__item {
+        margin-bottom: 30px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        @media screen and (min-width: 768px) {
+            margin: 0;
+            padding: 0;
+            width: 354px;
+            margin-bottom: 30px;
+
+            &:nth-last-of-type(2) {
+                margin-bottom: 0;
+            }
+        }
+
+        @media screen and (min-width: 1200px) {
+            margin: 0;
+            padding: 0;
+            width: 270px;
+        }
+    }
+
+    &__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+        width: 290px;
+        height: 120px;
+        margin-right: auto;
+        margin-left: auto;
+        background-color: $gray-bg;
+        border-radius: 4px;
+
+        @media screen and (min-width: 480px) {
+            width: 450px;
+        }
+
+        @media screen and (min-width: 768px) {
+            width: 354px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 270px;
+        }
+    }
+
+    &__icon {
+        align-self: center;
+    }
+
+    &__article {
+        margin-bottom: 10px;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.14;
+        text-align: center;
+        text-transform: uppercase;
+        color: $article-color;
+
+        @media screen and (min-width: 768px) {
+            width: 354px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            text-align: left;
+            width: 270px;
+        }
+    }
+
+    &__text {
+        line-height: 1.71;
+        color: $text-color;
+
+        @media screen and (min-width: 768px) {
+            width: 354px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 270px;
+        }
+    }
+}

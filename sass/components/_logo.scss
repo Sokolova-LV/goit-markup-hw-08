@@ -1,0 +1,49 @@
+.logo {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.16;
+    color: $accent-color;
+
+    &__span-white {
+        color: $main-bg;
+        transition: $duration $timing-function;
+
+        &:hover,
+        &:focus {
+            color: $accent-color;
+        }
+    }
+
+    &__span-black {
+        color: #000000;
+        transition: $duration $timing-function;
+
+        &:hover,
+        &:focus {
+            color: $accent-color;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 26px;
+        line-height: 1.19;
+    }
+
+    &__footer {
+        display: block;
+        margin-bottom: 20px;
+        font-family: "Raleway";
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.16;
+        color: $accent-color;
+
+        @media screen and (min-width: 1200px) {
+            font-size: 26px;
+            line-height: 1.19;
+        }
+    }
+}
